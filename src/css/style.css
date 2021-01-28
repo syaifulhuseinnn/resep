@@ -83,8 +83,17 @@
   font-display: swap;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --gold: #FFC60B;
+}
+
 body {
-  font-family: "HelveticaNeueBold";
-  font-size: 14px;
+  font-family: 'HelveticaNeueMedium';
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */

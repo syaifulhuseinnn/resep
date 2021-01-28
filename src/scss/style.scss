@@ -1,105 +1,16 @@
-// Libre
-@font-face {
-    font-family: 'libre_baskervillebold';
-    src: url('../fonts/libre/librebaskerville-bold-webfont.woff2') format('woff2'),
-         url('../fonts/libre/librebaskerville-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@import "fonts";
 
+* {
+	box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'libre_baskervilleitalic';
-    src: url('../fonts/libre/librebaskerville-italic-webfont.woff2') format('woff2'),
-         url('../fonts/libre/librebaskerville-italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'libre_baskervilleregular';
-    src: url('../fonts/libre/librebaskerville-regular-webfont.woff2') format('woff2'),
-         url('../fonts/libre/librebaskerville-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-// Helvetica
-@font-face {
-    font-family: 'HelveticaNeueThin';
-    src: url('../fonts/helveticas/HelveticaNeueThin.woff2') format('woff2'),
-        url('../fonts/helveticas/HelveticaNeueThin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'HelveticaNeueLight';
-    src: url('../fonts/helveticas/HelveticaNeueLight.woff2') format('woff2'),
-        url('../fonts/helveticas/HelveticaNeueLight.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'HelveticaNeueMedium';
-    src: url('../fonts/helveticas/HelveticaNeueMedium.woff2') format('woff2'),
-        url('../fonts/helveticas/HelveticaNeueMedium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'HelveticaNeueBold';
-    src: url('../fonts/helveticas/HelveticaNeueBold.woff2') format('woff2'),
-        url('../fonts/helveticas/HelveticaNeueBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'HelveticaNeueBlackCond';
-    src: url('../fonts/helveticas/HelveticaNeueBlackCond.woff2') format('woff2'),
-        url('../fonts/helveticas/HelveticaNeueBlackCond.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'HelveticaNeueRegular';
-    src: url('../fonts/helveticas/HelveticaNeueRegular.woff2') format('woff2'),
-        url('../fonts/helveticas/HelveticaNeueRegular.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'HelveticaNeueHeavy';
-    src: url('../fonts/helveticas/HelveticaNeueHeavy.woff2') format('woff2'),
-        url('../fonts/helveticas/HelveticaNeueHeavy.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'HelveticaNeueItalic';
-    src: url('../fonts/helveticas/HelveticaNeueItalic.woff2') format('woff2'),
-        url('../fonts/helveticas/HelveticaNeueItalic.woff') format('woff');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
+:root {
+	--gold: #FFC60B;
 }
 
 body {
-	font-family: "HelveticaNeueBold";
-	font-size: 14px;
+	font-family: 'HelveticaNeueMedium';
+	line-height: 1.5;
+	// margin: 0;
+	// padding: 0;
 }
