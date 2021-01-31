@@ -83,17 +83,40 @@
   font-display: swap;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 :root {
   --gold: #FFC60B;
+  --red: #DC5353;
 }
 
 body {
-  font-family: 'HelveticaNeueMedium';
-  line-height: 1.5;
+  font-family: "HelveticaNeueMedium";
+}
+
+input, button {
+  border-radius: 0px !important;
+}
+
+.wrapper {
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  font-family: "libre_baskervillebold";
+  color: var(--gold);
+  letter-spacing: 17px;
+  text-shadow: 1px 2px #00000013;
+  font-size: 3.5em;
+}
+
+.btn-search {
+  background-color: var(--red);
+  border-color: var(--red);
+}
+
+.btn-search:focus {
+  background-color: var(--red);
 }
 /*# sourceMappingURL=style.css.map */

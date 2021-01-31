@@ -1,16 +1,38 @@
-@import "fonts";
-
-* {
-	box-sizing: border-box;
-}
+@import "./fonts";
 
 :root {
 	--gold: #FFC60B;
+	--red: #DC5353;
 }
 
 body {
-	font-family: 'HelveticaNeueMedium';
-	line-height: 1.5;
-	// margin: 0;
-	// padding: 0;
+	font-family: "HelveticaNeueMedium";
+}
+
+input, button {
+	border-radius: 0px !important;
+}
+
+.wrapper {
+	background-image: url("../images/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.title {
+	font-family: "libre_baskervillebold";
+	color: var(--gold);
+	letter-spacing: 17px;
+	text-shadow: 1px 2px #00000013;
+	font-size: 3.5em;
+}
+
+.btn-search {
+	background-color: var(--red);
+	border-color: var(--red);
+	
+	&:focus {
+		background-color: var(--red);
+	}
 }
