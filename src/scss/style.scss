@@ -21,7 +21,15 @@ input, button {
 }
 
 .bg-danger {
-	background-color: #dc5353 !important;
+	background-color: var(--red) !important;
+}
+
+.bg-success {
+	background-color: var(--green) !important;
+}
+
+.text-success {
+	color: var(--green) !important;
 }
 
 @import "./header";
