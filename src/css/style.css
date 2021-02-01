@@ -29,7 +29,7 @@
 }
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif !important;
 }
 
 input, button {
@@ -37,11 +37,11 @@ input, button {
 }
 
 .icon {
-  font-size: 1em !important;
+  font-size: 1.2em !important;
 }
 
 header .title {
-  font-family: "libre_baskervillebold";
+  font-family: "libre_baskervillebold" !important;
   letter-spacing: 3px;
   color: var(--gold);
 }
