@@ -59,4 +59,16 @@ header .btn-lg {
 header .form-control-lg {
   height: 40px;
 }
+
+.title-category {
+  font-weight: 600 !important;
+}
+
+.banner {
+  padding: 2.5em 0;
+}
+
+.food-banner {
+  padding: 3.5em 0;
+}
 /*# sourceMappingURL=style.css.map */
