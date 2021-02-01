@@ -1,0 +1,15 @@
+/*------------------------
+	icons
+-------------------------*/
+.icon-search_left::before {
+  content: "\ea03";
+}
+
+.icon-love-stroke::before {
+  content: "\ea04";
+}
+
+.icon-love-fill::before {
+  content: "\ea05";
+}
+/*# sourceMappingURL=icons.css.map */

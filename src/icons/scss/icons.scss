@@ -1,0 +1,23 @@
+/*------------------------
+	icons
+-------------------------*/
+@function unicode($str) {
+  @return unquote("\"\\#{$str}\"");
+}
+
+$icon-search_left: unicode(ea03);
+$icon-love-stroke: unicode(ea04);
+$icon-love-fill: unicode(ea05);
+
+.icon-search_left::before {
+  content: $icon-search_left;
+}
+
+.icon-love-stroke::before {
+  content: $icon-love-stroke;
+}
+
+.icon-love-fill::before {
+  content: $icon-love-fill;
+}
+

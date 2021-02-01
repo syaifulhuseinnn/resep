@@ -3,36 +3,21 @@
 :root {
 	--gold: #FFC60B;
 	--red: #DC5353;
+	--purple: #a72461;
+	--gray: #ececec;
+	--green: #00af91;
 }
 
 body {
-	font-family: "HelveticaNeueMedium";
+	font-family: 'Work Sans', sans-serif;
 }
 
 input, button {
 	border-radius: 0px !important;
 }
 
-.wrapper {
-	background-image: url("../images/bg.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+.icon {
+	font-size: 1em !important;
 }
 
-.title {
-	font-family: "libre_baskervillebold";
-	color: var(--gold);
-	letter-spacing: 17px;
-	text-shadow: 1px 2px #00000013;
-	font-size: 3.5em;
-}
-
-.btn-search {
-	background-color: var(--red);
-	border-color: var(--red);
-	
-	&:focus {
-		background-color: var(--red);
-	}
-}
+@import "./header";

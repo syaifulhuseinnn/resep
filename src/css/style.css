@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
 @font-face {
   font-family: 'libre_baskervillebold';
   src: url("../fonts/libre/librebaskerville-bold-webfont.woff2") format("woff2"), url("../fonts/libre/librebaskerville-bold-webfont.woff") format("woff");
@@ -19,104 +20,34 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'HelveticaNeueThin';
-  src: url("../fonts/helveticas/HelveticaNeueThin.woff2") format("woff2"), url("../fonts/helveticas/HelveticaNeueThin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'HelveticaNeueLight';
-  src: url("../fonts/helveticas/HelveticaNeueLight.woff2") format("woff2"), url("../fonts/helveticas/HelveticaNeueLight.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'HelveticaNeueMedium';
-  src: url("../fonts/helveticas/HelveticaNeueMedium.woff2") format("woff2"), url("../fonts/helveticas/HelveticaNeueMedium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'HelveticaNeueBold';
-  src: url("../fonts/helveticas/HelveticaNeueBold.woff2") format("woff2"), url("../fonts/helveticas/HelveticaNeueBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'HelveticaNeueBlackCond';
-  src: url("../fonts/helveticas/HelveticaNeueBlackCond.woff2") format("woff2"), url("../fonts/helveticas/HelveticaNeueBlackCond.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'HelveticaNeueRegular';
-  src: url("../fonts/helveticas/HelveticaNeueRegular.woff2") format("woff2"), url("../fonts/helveticas/HelveticaNeueRegular.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'HelveticaNeueHeavy';
-  src: url("../fonts/helveticas/HelveticaNeueHeavy.woff2") format("woff2"), url("../fonts/helveticas/HelveticaNeueHeavy.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'HelveticaNeueItalic';
-  src: url("../fonts/helveticas/HelveticaNeueItalic.woff2") format("woff2"), url("../fonts/helveticas/HelveticaNeueItalic.woff") format("woff");
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
-}
-
 :root {
   --gold: #FFC60B;
   --red: #DC5353;
+  --purple: #a72461;
+  --gray: #ececec;
+  --green: #00af91;
 }
 
 body {
-  font-family: "HelveticaNeueMedium";
+  font-family: 'Work Sans', sans-serif;
 }
 
 input, button {
   border-radius: 0px !important;
 }
 
-.wrapper {
-  background-image: url("../images/bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.icon {
+  font-size: 1em !important;
 }
 
 .title {
   font-family: "libre_baskervillebold";
+  letter-spacing: 3px;
   color: var(--gold);
-  letter-spacing: 17px;
-  text-shadow: 1px 2px #00000013;
-  font-size: 3.5em;
 }
 
-.btn-search {
-  background-color: var(--red);
-  border-color: var(--red);
-}
-
-.btn-search:focus {
-  background-color: var(--red);
+.btn-success {
+  background-color: var(--green);
+  border-color: var(--green);
 }
 /*# sourceMappingURL=style.css.map */
