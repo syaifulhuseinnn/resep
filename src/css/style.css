@@ -40,14 +40,23 @@ input, button {
   font-size: 1em !important;
 }
 
-.title {
+header .title {
   font-family: "libre_baskervillebold";
   letter-spacing: 3px;
   color: var(--gold);
 }
 
-.btn-success {
+header .btn-success {
   background-color: var(--green);
   border-color: var(--green);
+}
+
+header .btn-lg {
+  height: 40px;
+  width: 40px;
+}
+
+header .form-control-lg {
+  height: 40px;
 }
 /*# sourceMappingURL=style.css.map */
