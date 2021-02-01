@@ -1,25 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-@font-face {
-  font-family: 'libre_baskervillebold';
-  src: url("../fonts/libre/librebaskerville-bold-webfont.woff2") format("woff2"), url("../fonts/libre/librebaskerville-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'libre_baskervilleitalic';
-  src: url("../fonts/libre/librebaskerville-italic-webfont.woff2") format("woff2"), url("../fonts/libre/librebaskerville-italic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'libre_baskervilleregular';
-  src: url("../fonts/libre/librebaskerville-regular-webfont.woff2") format("woff2"), url("../fonts/libre/librebaskerville-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 :root {
   --gold: #FFC60B;
   --red: #DC5353;
@@ -40,8 +20,12 @@ input, button {
   font-size: 1.2em !important;
 }
 
+.bg-danger {
+  background-color: #dc5353 !important;
+}
+
 header .title {
-  font-family: "libre_baskervillebold" !important;
+  font-family: 'Vollkorn', serif !important;
   letter-spacing: 3px;
   color: var(--gold);
 }

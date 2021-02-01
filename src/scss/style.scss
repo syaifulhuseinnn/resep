@@ -20,5 +20,9 @@ input, button {
 	font-size: 1.2em !important;
 }
 
+.bg-danger {
+	background-color: #dc5353 !important;
+}
+
 @import "./header";
 @import "./category";
