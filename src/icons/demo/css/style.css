@@ -158,3 +158,103 @@ icons
     content: "\ea05";
 }
 
+.icon-Greek::before {
+    content: "\ea06";
+}
+
+.icon-Indian::before {
+    content: "\ea07";
+}
+
+.icon-Japanese::before {
+    content: "\ea08";
+}
+
+.icon-Kenyan::before {
+    content: "\ea09";
+}
+
+.icon-Jamaican::before {
+    content: "\ea0a";
+}
+
+.icon-Mexican::before {
+    content: "\ea0b";
+}
+
+.icon-Moroccan::before {
+    content: "\ea0c";
+}
+
+.icon-Polish::before {
+    content: "\ea0d";
+}
+
+.icon-Russian::before {
+    content: "\ea0e";
+}
+
+.icon-Spanish::before {
+    content: "\ea0f";
+}
+
+.icon-Thai::before {
+    content: "\ea10";
+}
+
+.icon-Tunisian::before {
+    content: "\ea11";
+}
+
+.icon-Turkish::before {
+    content: "\ea12";
+}
+
+.icon-Unknown::before {
+    content: "\ea13";
+}
+
+.icon-Vietnamese::before {
+    content: "\ea14";
+}
+
+.icon-American::before {
+    content: "\ea15";
+}
+
+.icon-British::before {
+    content: "\ea16";
+}
+
+.icon-Canadian::before {
+    content: "\ea17";
+}
+
+.icon-Chinese::before {
+    content: "\ea18";
+}
+
+.icon-Dutch::before {
+    content: "\ea19";
+}
+
+.icon-Egyptian::before {
+    content: "\ea1a";
+}
+
+.icon-French::before {
+    content: "\ea1b";
+}
+
+.icon-Italian::before {
+    content: "\ea1c";
+}
+
+.icon-Malaysian::before {
+    content: "\ea1d";
+}
+
+.icon-Irish::before {
+    content: "\ea1e";
+}
+

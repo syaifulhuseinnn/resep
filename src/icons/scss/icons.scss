@@ -8,6 +8,31 @@
 $icon-search_left: unicode(ea03);
 $icon-love-stroke: unicode(ea04);
 $icon-love-fill: unicode(ea05);
+$icon-Greek: unicode(ea06);
+$icon-Indian: unicode(ea07);
+$icon-Japanese: unicode(ea08);
+$icon-Kenyan: unicode(ea09);
+$icon-Jamaican: unicode(ea0a);
+$icon-Mexican: unicode(ea0b);
+$icon-Moroccan: unicode(ea0c);
+$icon-Polish: unicode(ea0d);
+$icon-Russian: unicode(ea0e);
+$icon-Spanish: unicode(ea0f);
+$icon-Thai: unicode(ea10);
+$icon-Tunisian: unicode(ea11);
+$icon-Turkish: unicode(ea12);
+$icon-Unknown: unicode(ea13);
+$icon-Vietnamese: unicode(ea14);
+$icon-American: unicode(ea15);
+$icon-British: unicode(ea16);
+$icon-Canadian: unicode(ea17);
+$icon-Chinese: unicode(ea18);
+$icon-Dutch: unicode(ea19);
+$icon-Egyptian: unicode(ea1a);
+$icon-French: unicode(ea1b);
+$icon-Italian: unicode(ea1c);
+$icon-Malaysian: unicode(ea1d);
+$icon-Irish: unicode(ea1e);
 
 .icon-search_left::before {
   content: $icon-search_left;
@@ -19,5 +44,105 @@ $icon-love-fill: unicode(ea05);
 
 .icon-love-fill::before {
   content: $icon-love-fill;
+}
+
+.icon-Greek::before {
+  content: $icon-Greek;
+}
+
+.icon-Indian::before {
+  content: $icon-Indian;
+}
+
+.icon-Japanese::before {
+  content: $icon-Japanese;
+}
+
+.icon-Kenyan::before {
+  content: $icon-Kenyan;
+}
+
+.icon-Jamaican::before {
+  content: $icon-Jamaican;
+}
+
+.icon-Mexican::before {
+  content: $icon-Mexican;
+}
+
+.icon-Moroccan::before {
+  content: $icon-Moroccan;
+}
+
+.icon-Polish::before {
+  content: $icon-Polish;
+}
+
+.icon-Russian::before {
+  content: $icon-Russian;
+}
+
+.icon-Spanish::before {
+  content: $icon-Spanish;
+}
+
+.icon-Thai::before {
+  content: $icon-Thai;
+}
+
+.icon-Tunisian::before {
+  content: $icon-Tunisian;
+}
+
+.icon-Turkish::before {
+  content: $icon-Turkish;
+}
+
+.icon-Unknown::before {
+  content: $icon-Unknown;
+}
+
+.icon-Vietnamese::before {
+  content: $icon-Vietnamese;
+}
+
+.icon-American::before {
+  content: $icon-American;
+}
+
+.icon-British::before {
+  content: $icon-British;
+}
+
+.icon-Canadian::before {
+  content: $icon-Canadian;
+}
+
+.icon-Chinese::before {
+  content: $icon-Chinese;
+}
+
+.icon-Dutch::before {
+  content: $icon-Dutch;
+}
+
+.icon-Egyptian::before {
+  content: $icon-Egyptian;
+}
+
+.icon-French::before {
+  content: $icon-French;
+}
+
+.icon-Italian::before {
+  content: $icon-Italian;
+}
+
+.icon-Malaysian::before {
+  content: $icon-Malaysian;
+}
+
+.icon-Irish::before {
+  content: $icon-Irish;
 }
 
