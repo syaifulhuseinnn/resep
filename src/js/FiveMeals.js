@@ -8,7 +8,7 @@ function FiveMeals(meals) {
 			return (
 				`<div id="item-1" class="d-inline-block me-5">
 					<div class="d-flex justify-content-between">
-						<img src="${this.mealThumb}" alt="" class="me-3" width="100px" height="100px">
+						<img src="${this.mealThumb}" alt="" class="me-3" width="110px" height="110px">
 						<div class="d-block align-self-start flex-grow-1">
 							<h1 class="fw-bold lh-base">
 								${this.meal}
