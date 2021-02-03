@@ -16,10 +16,6 @@ input, button {
   border-radius: 0px !important;
 }
 
-.icon {
-  font-size: 1.2em !important;
-}
-
 .bg-danger {
   background-color: var(--red) !important;
 }
