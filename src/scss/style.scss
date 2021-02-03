@@ -5,7 +5,8 @@
 	--red: #DC5353;
 	--purple: #a72461;
 	--gray: #ececec;
-	--green: #00af91;
+	--green: #00af92;
+	--black: #160f30;
 }
 
 body {
@@ -26,6 +27,14 @@ input, button {
 
 .text-success {
 	color: var(--green) !important;
+}
+
+.text-dark {
+	color: var(--black) !important;
+}
+
+.text-danger {
+	color: var(--red) !important;
 }
 
 @import "./header";
