@@ -14,21 +14,27 @@
 	<title>Categories</title>
 </head>
 <body>
-	<div class="container-fluid p-3">
-		<header>
+	<div class="container-fluid p-3 position-relative">
+		<nav class="position-sticky top-0 bg-white py-2 border-bottom border-light">		
 			<div class="d-flex justify-content-between">
-				<div>
-					<h1 class="text-dark">Beef</h1>
+				<div class="">
+					<h1 class="text-dark m-0">Beef</h1>
 				</div>
 				<div class="align-self-center">
 					<i class='bx bxs-heart bx-sm text-secondary position-relative'>
 						<span class="position-absolute top-0 start-100 translate badge border border-light rounded-circle bg-success p-1"><span class="visually-hidden">unread messages</span></span>
 					</i>
 				</div>
+			</div>		
+		</nav>
+		<header class="my-3">
+			<div class="bg-light p-2">
+				<small class="text-muted"><i class='bx bxs-quote-alt-left text-secondary'></i> Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times. Beef is a source of high-quality protein and essential nutrients.</small>
 			</div>
 		</header>
 		<main class="my-3">
-			<div class="row gy-3" id="five-list">
+			<h5>Populer</h5>
+			<div class="row gy-4" id="five-list">
 				<div class="col-12">
 					<div class="food-card p-2">
 						<div class="d-flex justify-content-between">
