@@ -1,3 +1,3 @@
-import main from "./js/index/main.js";
+import main from "./js/categories/main.js";
 
 window.addEventListener("DOMContentLoaded", main);

@@ -8,6 +8,7 @@ const main = () => {
 	const five_meals = document.querySelector("#five-meals");
 	const categories = document.querySelector("#categories");
 	const areas = document.querySelector("#areas");
+	const description = document.querySelector(".description");
 
 	function getTodayDate() {
 		return new Date().toLocaleString().split(',')[0]
@@ -59,6 +60,10 @@ const main = () => {
 	function getAreas() {
 		const section = "areas";
 		request(section).then(result => areas.innerHTML = result);
+	}
+
+	function saveId() {
+		console.log(description.dataset.description);
 	}
 	
 	async function request(section) {
