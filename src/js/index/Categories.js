@@ -6,8 +6,8 @@ function Categories(categories, component = "") {
 			this.categoryThumb = category.strCategoryThumb;
 			this.category = category.strCategory;
 			this.component += `<div class="d-inline-block me-5 w-50 banner-card">
-							<div class="bg-white p-4" onclick="saveId()">
-								<a href="#" data-description="${this.categoryDesc}" class="text-decoration-none description">
+							<div class="bg-white p-4">
+								<a href="categories.html?c=${this.category}" data-description="${this.categoryDesc}" class="text-decoration-none description">
 									<div class="bg-light food-banner">
 										<img src="${this.categoryThumb}" alt="" class="img-fluid">
 									</div>

@@ -8,7 +8,6 @@ const main = () => {
 	const five_meals = document.querySelector("#five-meals");
 	const categories = document.querySelector("#categories");
 	const areas = document.querySelector("#areas");
-	const description = document.querySelector(".description");
 
 	function getTodayDate() {
 		return new Date().toLocaleString().split(',')[0]
@@ -52,9 +51,12 @@ const main = () => {
 		}
 	}
 
-	function getCategories() {
+	async function getCategories() {
 		const section = "categories";
-		request(section).then(result => categories.innerHTML = result);
+		await request(section).then(result => {
+			categories.innerHTML = result;
+		});
+		saveDescription();
 	}
 
 	function getAreas() {
@@ -62,8 +64,13 @@ const main = () => {
 		request(section).then(result => areas.innerHTML = result);
 	}
 
-	function saveId() {
-		console.log(description.dataset.description);
+	function saveDescription() {
+		const descriptions = document.querySelectorAll(".description");
+		descriptions.forEach(description => {
+			description.addEventListener("click", function() {
+				sessionStorage.setItem("description", this.getAttribute("data-description"));
+			});
+		});
 	}
 	
 	async function request(section) {
