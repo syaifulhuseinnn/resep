@@ -6,13 +6,16 @@ function Jumbotron(meals) {
 		this.element = function() {
 			return (
 				`<div class="d-flex justify-content-between">
-						<img src="${this.mealThumb}" alt="" class="me-3 img-fluid" width="115px" height="115px">
-						<div class="d-block align-self-start flex-grow-1">
-							<h1 class="fw-bold display-4">${this.meal} </br><span class="fs-2 fw-normal">${this.mealArea} Food</span></h1>
-						</div>
-						<span class="text-end align-self-end fs-5">
-							<i class="icon icon-love-stroke text-end text-secondary"></i>
-						</span>
+					<div class="bg-light p-2 me-2 flex-shrink-1">
+						<img src="${this.mealThumb}" alt="" class="img-fluid" width="120px" height="120px">
+					</div>
+					<div class="w-50">
+						<h4 class="fw-bold">${this.meal}</h4>
+						<h6 class="fw-normal">Italian Food</h6>
+					</div>
+					<div class="align-self-end">
+						<span class="badge border border-light rounded-circle bg-light p-1"><i class='bx bx-heart text-center text-secondary fs-3' ></i></span>
+					</div>
 				</div>`
 			);
 		}

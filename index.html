@@ -10,46 +10,49 @@
 	
 	<link rel="stylesheet" href="./src/css/style.css">
 
-	<!-- Icons -->
-	<link rel="stylesheet" href="./src/icons/demo/css/reset.css">
-	<link rel="stylesheet" href="./src/icons/demo/css/style.css">
+	<!-- Boxicons CSS -->
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Hello, world!</title>
   </head>
   <body>
-	<div class="container-fluid p-4">
-		<header class="p-0">
-			<div class="d-flex justify-content-between my-2">
-				<h1 class="title display-1 text-dark">RESEP</h1>
-				<i class="icon icon-love-fill align-self-center text-secondary position-relative">
-					<span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"><span class="visually-hidden">unread messages</span></span>
-				</i>
+	<div class="container-fluid p-3 pt-0 position-relative">
+		<nav class="position-sticky top-0 bg-white py-3 border-bottom border-light">
+			<div class="d-flex justify-content-between">
+				<h1 class="text-dark m-0">RESEP</h1>
+				<div class="align-self-center">
+					<i class='bx bxs-heart fs-1 text-success position-relative'>
+						<span class="position-absolute top-0 start-100 translate badge border border-light rounded-circle bg-danger p-1"><span class="visually-hidden">unread messages</span></span>
+					</i>
+				</div>
 			</div>
+		</nav>
+		<header class="my-3">
 			<form action="" class="d-flex justify-content-between my-4">
 				<div class="flex-grow-1 me-3">
-					<input type="text" class="form-control form-control-lg fs-4 bg-light border-0" placeholder="Chicken">
+					<input type="text" class="form-control form-control-lg bg-light border-0 fs-6" placeholder="Chicken">
 				</div>
-				<div class="">
-					<button class="btn btn-success btn-lg border-0">
-						<i class="icon icon-search_left text-center"></i>
+				<div class="text-center">
+					<button class="btn btn-success btn-lg border-0 text-center p-0">
+						<i class='bx bx-search-alt text-center'></i>
 					</button>
 				</div>
 			</form>
 		</header>
-		<main class="my-5">
-			<h1 class="fw-bold display-6 my-4">Favorit hari ini</h1>
-			<div class="banner-card p-4" id="jumbotron">
+		<main class="my-3">
+			<h5 class="my-4">Favorit hari ini</h5>
+			<div class="food-card p-2" id="jumbotron">
 				<div class="d-flex justify-content-between">
 					<img src="https://via.placeholder.com/110" alt="" class="me-3 img-fluid">
 					<div class="d-block align-self-start flex-grow-1">
 						<h1 class="fw-bold display-4"> </br><span class="fs-2 fw-normal"></span></h1>
 					</div>
 					<span class="text-end align-self-end fs-5">
-						<i class="icon icon-love-stroke text-end text-secondary"></i>
+						<i class='bx bx-heart text-center text-secondary fs-3' ></i>
 					</span>
 				</div>
 			</div>
-			<h1 class="fw-bold display-6 mt-5 mb-4">Lihat juga</h1>
+			<h5 class="my-4">Lihat juga</h5>
 			<div class="overflow-auto text-nowrap" id="five-meals">
 				<div id="item-1" class="d-inline-block me-5">
 					<div class="d-flex justify-content-between">
@@ -142,49 +145,46 @@
 			<div class="ratio ratio-16x9">
 				<iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
 			  </div> -->
-			<h1 class="fw-bold display-6 mt-5 mb-4">Kategori</h1>
-			<div class="overflow-auto text-nowrap p-2" id="categories">
-				<div id="item-1" class="d-inline-block me-5 w-50 banner-card">
-					<div class="bg-white p-4">
-						<div class="bg-light food-banner">
-							<img src="https://via.placeholder.com/110" alt="" class="img-fluid">
-						</div>
-						<h1 class="mt-4 title-category">Beef</h1>
+			<h5 class="my-4">Kategori</h5>
+			<div id="categories" class="overflow-auto text-nowrap py-2">
+				<div class="d-inline-block w-50 me-4">
+					<div class="bg-success bg-gradient p-3">
+						<h6 class="text-white">Loading..</h6>
 					</div>
 				</div>
-				<div id="item-1" class="d-inline-block me-5 w-50 banner-card">
-					<div class="bg-white p-4">
-						<div class="bg-light food-banner">
-							<img src="https://via.placeholder.com/110" alt="" class="img-fluid">
-						</div>
-						<h1 class="mt-4 title-category">Chicken</h1>
+				<div class="d-inline-block w-50 me-4">
+					<div class="bg-success bg-gradient p-3">
+						<h6 class="text-white">Loading..</h6>
 					</div>
 				</div>
-				<div id="item-1" class="d-inline-block me-5 w-50 banner-card">
-					<div class="bg-white p-4">
-						<div class="bg-light food-banner">
-							<img src="https://via.placeholder.com/110" alt="" class="img-fluid">
-						</div>
-						<h1 class="mt-4 title-category">Dessert</h1>
-					</div>
-				</div>
-				<div id="item-1" class="d-inline-block me-5 w-50 banner-card">
-					<div class="bg-white p-4">
-						<div class="bg-light food-banner">
-							<img src="https://via.placeholder.com/110" alt="" class="img-fluid">
-						</div>
-						<h1 class="mt-4 title-category">Lamb</h1>
+				<div class="d-inline-block w-50 me-4">
+					<div class="bg-success bg-gradient p-3">
+						<h6 class="text-white">Loading..</h6>
 					</div>
 				</div>
 			</div>
-			<h1 class="fw-bold display-6 mt-5 mb-4">Makanan dari negara</h1>
-			<div class="overflow-auto text-nowrap p-2" id="areas">
-				
+			<h5 class="my-4">Makanan dari negara</h5>
+			<div class="overflow-auto text-nowrap py-2" id="areas">
+				<div class="d-inline-block w-50 me-4">
+					<div class="bg-success bg-gradient p-3">
+						<h6 class="text-white">Loading..</h6>
+					</div>
+				</div>
+				<div class="d-inline-block w-50 me-4">
+					<div class="bg-success bg-gradient p-3">
+						<h6 class="text-white">Loading..</h6>
+					</div>
+				</div>
+				<div class="d-inline-block w-50 me-4">
+					<div class="bg-success bg-gradient p-3">
+						<h6 class="text-white">Loading..</h6>
+					</div>
+				</div>
 			</div>
 		</main>
 	</div>
 	<footer class="bg-dark p-4">
-		<h6 class="text-white text-center fs-6">&copy Syaiful Anwar Husen Lubis | 2021</h6>
+		<h6 class="text-white text-center">&copy Syaiful Anwar Husen Lubis | 2021</h6>
 	</footer>
 
 	<script src="./src/index.js" type="module"></script>
