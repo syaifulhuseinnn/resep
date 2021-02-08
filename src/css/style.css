@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 :root {
@@ -51,8 +52,26 @@ input, button {
 
 .wrap-meal {
   background: white;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, white), to(rgba(255, 255, 255, 0.63209)));
-  background: linear-gradient(0deg, white 70%, rgba(255, 255, 255, 0.63209) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(84%, white), to(rgba(255, 255, 255, 0.63209)));
+  background: linear-gradient(0deg, white 84%, rgba(255, 255, 255, 0.63209) 100%);
+}
+
+ul li::before {
+  content: "•";
+  color: var(--gold);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-size: 1.2em;
+}
+
+#meal-img {
+  background-image: url("https://www.themealdb.com/images/media/meals/xxyupu1468262513.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
 }
 
 header .title {

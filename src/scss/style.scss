@@ -51,7 +51,25 @@ input, button {
 
 .wrap-meal {
 	background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 70%, rgba(255,255,255,0.6320903361344538) 100%);
+background: linear-gradient(0deg, rgba(255,255,255,1) 84%, rgba(255,255,255,0.6320903361344538) 100%);
+}
+
+ul li::before {
+  content: "•";
+  color: var(--gold);
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+  font-size: 1.2em;
+}
+
+#meal-img {
+	background-image: url("https://www.themealdb.com/images/media/meals/xxyupu1468262513.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
 }
 
 @import "./header";
