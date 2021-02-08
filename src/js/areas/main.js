@@ -1,16 +1,16 @@
 import Service from "../misc/Service.js";
 import Meals from "./Meals.js";
-import OtherCategories from "./OtherCategories.js";
+import OtherAreas from "./OtherAreas.js";
 
 const main = () => {
   const query = window.location.search;
   const headTitle = document.querySelector("#head-title");
   const divPopuler = document.querySelector("#populer");
-  const divOtherCategories = document.querySelector("#others-categories");
+  const divOtherAreas = document.querySelector("#others-areas");
   const divOtherMeals = document.querySelector("#other-foods");
 
   function getNav() {
-	  const title = query.replace("?c=", "");
+	  const title = query.replace("?a=", "");
 	  headTitle.innerHTML = title;
   }
 
@@ -24,13 +24,14 @@ const main = () => {
     });
   }
 
-  function getOthersCategories() {
-    const path = "categories.php";
-    const service = new Service(path);
+  function getOthersAreas() {
+    const path = "list.php";
+    const queryArea = "?a=list";
+    const service = new Service(path, queryArea);
     const request = service.requestData();
 
     request.then((results) => {
-      renderOthersCategories(results.categories);
+      renderOthersAreas(results.meals);
     });
   }
 
@@ -50,7 +51,7 @@ const main = () => {
     }
   }
 
-  function renderOthersCategories(data) {
+  function renderOthersAreas(data) {
     let otherCategoriesElement = "";
     const background = [
       "#f2a154", "#e97878",
@@ -61,9 +62,9 @@ const main = () => {
       "#ee99a0", "#1687a7",
       "#5eaaa8", "#c1a1d3"];
     data.forEach((category) => {
-      const OTHERCATEGORIES = new OtherCategories(category);
-      otherCategoriesElement += OTHERCATEGORIES.renderElement();
-      divOtherCategories.innerHTML = otherCategoriesElement;
+      const OTHERAREAS = new OtherAreas(category);
+      otherCategoriesElement += OTHERAREAS.renderElement();
+      divOtherAreas.innerHTML = otherCategoriesElement;
     });
     const classCategory = document.querySelectorAll(".category");
     for (let i = 0; i < classCategory.length; i += 1) {
@@ -74,7 +75,7 @@ const main = () => {
 
   getNav();
   getMeals();
-  getOthersCategories();
+  getOthersAreas();
 };
 
 export default main;
