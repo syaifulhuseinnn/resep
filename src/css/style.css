@@ -41,6 +41,20 @@ input, button {
   color: var(--red) !important;
 }
 
+.top-25 {
+  top: 25% !important;
+}
+
+.top-15 {
+  top: 15% !important;
+}
+
+.wrap-meal {
+  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, white), to(rgba(255, 255, 255, 0.63209)));
+  background: linear-gradient(0deg, white 70%, rgba(255, 255, 255, 0.63209) 100%);
+}
+
 header .title {
   color: var(--black);
 }

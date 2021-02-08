@@ -41,5 +41,18 @@ input, button {
 	color: var(--red) !important;
 }
 
+.top-25 {
+	top: 25% !important;
+}
+
+.top-15 {
+	top: 15% !important;
+}
+
+.wrap-meal {
+	background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 70%, rgba(255,255,255,0.6320903361344538) 100%);
+}
+
 @import "./header";
 @import "./category";
