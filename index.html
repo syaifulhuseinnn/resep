@@ -28,17 +28,25 @@
 			</div>
 		</nav>
 		<header class="my-3">
-			<form action="" class="d-flex justify-content-between my-4">
+			<form id="search-form" class="d-flex justify-content-between my-4">
 				<div class="flex-grow-1 me-3">
-					<input type="text" class="form-control form-control-lg bg-light border-0 fs-6" placeholder="Chicken">
+					<input type="text" class="form-control form-control-lg bg-light border-0 fs-6" id="keyword" placeholder="Chicken">
 				</div>
 				<div class="text-center">
-					<button class="btn btn-success btn-lg border-0 text-center p-0">
+					<button type="submit" class="btn btn-success btn-lg border-0 text-center p-0">
 						<i class='bx bx-search-alt text-center'></i>
 					</button>
 				</div>
 			</form>
 		</header>
+		<div id="loading" class="d-none">
+			<div class="d-flex justify-content-center align-items-center vh-100">
+				<i class='bx bx-loader-circle bx-spin display-1' ></i>
+			</div>
+		</div>
+		<div class="my-3">
+			<div class="row gy-4 mb-3" id="search-meals"></div>
+		</div>
 		<main class="my-3">
 			<h5 class="my-4">Favorit hari ini</h5>
 			<div class="food-card p-2" id="jumbotron">

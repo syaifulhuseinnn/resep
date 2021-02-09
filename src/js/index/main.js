@@ -3,12 +3,41 @@ import FiveMeals from "./FiveMeals.js";
 import Categories from "./Categories.js";
 import Areas from "./Areas.js";
 import Service from "../misc/Service.js";
+import Meals from "./Meals.js";
 
 const main = () => {
 	const jumbotron = document.querySelector("#jumbotron");
 	const divFiveMeals = document.querySelector("#five-meals");
 	const divCategories = document.querySelector("#categories");
 	const divAreas = document.querySelector("#areas");
+	const formSearch = document.querySelector("#search-form");
+	const divSearchMeal = document.querySelector("#search-meals");
+	const loading = document.querySelector("#loading");
+	const mainTag = document.querySelector("main");
+	const footerTag = document.querySelector("footer");
+
+	formSearch.addEventListener("submit", searchMeal);
+
+	function searchMeal(event) {
+		event.preventDefault();
+		const keyword = document.querySelector("#keyword");
+		const path = "search.php";
+		const query = `?s=${keyword.value}`;
+		const request = requestData(path, query);
+
+		hideElement();
+
+		request.then((results) => {
+			renderMeals(results.meals);
+		});
+	}
+
+	function hideElement() {
+		mainTag.style.display = "none";
+		footerTag.style.display = "none";
+		loading.classList.remove("d-none");
+		loading.classList.add("d-block");
+	}
 
 	function getTodayDate() {
 		return new Date().toLocaleString().split(",")[0];
@@ -99,6 +128,17 @@ const main = () => {
 	function requestData(path, query = "") {
 	  const SERVICE = new Service(path, query);
 	  return SERVICE.requestData();
+	}
+
+	function renderMeals(data) {
+		let mealsElement = "";
+		loading.classList.remove("d-block");
+		loading.classList.add("d-none");
+		data.forEach((meal) => {
+			const MEALS = new Meals(meal);
+			mealsElement += MEALS.renderElement();
+			divSearchMeal.innerHTML = mealsElement;
+		});
 	}
 
 	function renderJumbotron(data) {
