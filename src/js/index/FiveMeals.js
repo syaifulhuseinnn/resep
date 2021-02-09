@@ -13,7 +13,7 @@ function FiveMeals(meals) {
 					<img src="${this.mealThumb}" alt="" class="me-3" width="110px" height="110px">
 					<div class="d-block align-self-start flex-grow-1">
 						<h6>${this.meal}</h6>
-						<h6 class="fw-normal text-secondary">${this.mealArea} Food</h6>
+						<h6 class="fw-normal text-secondary"><a href="areas.html?a=${this.mealArea}" class="text-decoration-none text-secondary">${this.mealArea} Food</a></h6>
 						<h6 class="text-primary fw-normal"><a href="categories.html?c=${this.mealCategory}" class="text-decoration-none">${this.mealCategory}</a></h6>
 					</div>
 					<span class="text-end align-self-end fs-5">
