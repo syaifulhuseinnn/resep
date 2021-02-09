@@ -1,9 +1,10 @@
+.title {
+	font-family: 'Berkshire Swash', cursive;
+	// letter-spacing: 3px;
+	color: var(--black);
+}
+
 header {
-	.title {
-		// font-family: 'Vollkorn', serif !important;
-		// letter-spacing: 3px;
-		color: var(--black);
-	}
 	
 	.btn-success {
 		background-color: var(--green);

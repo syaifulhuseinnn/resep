@@ -14,6 +14,10 @@
 	box-shadow: 0px 10px 10px 0px rgba(184, 184, 184, 0.068);
 }
 
+.food-card:hover {
+	box-shadow: 0px 10px 10px 0px rgba(79, 199, 255, 0.116);
+}
+
 .translate {
 	transform: translate(-70%,-30%)!important;
 }

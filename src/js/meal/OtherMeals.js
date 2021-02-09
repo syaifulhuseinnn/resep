@@ -8,10 +8,10 @@ function OtherMeals(meals) {
 		return (
 			`
 		<a href="meal.html?i=${this.idMeal}" class="text-decoration-none text-dark">
-			<div id="item-1" class="d-inline-block me-3">
+			<div id="item-1" class="d-inline-block me-3 me-xxl-5">
 				<div class="d-flex justify-content-between">
-					<img src="${this.mealThumb}" alt="" class="me-3" width="110px" height="110px">
-					<div class="d-block align-self-start flex-grow-1">
+					<img src="${this.mealThumb}" alt="" class="five-meals-img">
+					<div class="d-block align-self-start flex-grow-1 mx-3">
 						<h6>${this.meal}</h6>
 						<h6 class="fw-normal text-secondary"><a href="areas.html?a=${this.mealArea}" class="text-decoration-none text-secondary">${this.mealArea} Food</a></h6>
 						<h6 class="text-primary fw-normal"><a href="categories.html?c=${this.mealCategory}" class="text-decoration-none">${this.mealCategory}</a></h6>

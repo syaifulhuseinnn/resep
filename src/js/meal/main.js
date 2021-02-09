@@ -28,20 +28,19 @@ const main = () => {
 	function getOtherMeals() {
 		const fiveMealsInLocalStorage = getLocalStorage("five-meals");
 
-		const d = new Date(2018, 11, 24);
-		const e = d.toLocaleString();
-
 		renderOtherMeals(fiveMealsInLocalStorage.results);
 	}
 
 	function renderHead(data) {
-	  const coverMeal = document.querySelector("#cover-meal");
-	  let headElement = "";
-	  data.forEach((meal) => {
-		  coverMeal.style.backgroundImage = `url("${meal.strMealThumb}")`;
-		  const HEAD = new Head(meal);
-		  headElement += HEAD.renderElement();
-		  divHead.innerHTML = headElement;
+		const titleTab = document.querySelector("title");
+		const coverMeal = document.querySelector("#cover-meal");
+		let headElement = "";
+		data.forEach((meal) => {
+			titleTab.innerHTML = `${meal.strMeal}, ${meal.strArea} Food`;
+			coverMeal.style.backgroundImage = `url("${meal.strMealThumb}")`;
+			const HEAD = new Head(meal);
+			headElement += HEAD.renderElement();
+			divHead.innerHTML = headElement;
 	  });
 	}
 

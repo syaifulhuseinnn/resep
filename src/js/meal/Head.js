@@ -7,7 +7,7 @@ function Head(meal) {
 	this.mealYoutube = meal.strYoutube;
 	this.renderElement = function () {
 		return (
-			`<img src="${this.mealThumb}" alt="" height="200px" width="200px" class="img-fluid mx-auto d-block border border-5 border-light">
+			`<img src="${this.mealThumb}" alt="" class="jumbotron-img mx-auto d-block border border-5 border-light">
 			<div class="my-4" id="title">
 				<h4 class="text-center">${this.meal}</h4>
 				<h6 class="text-center text-muted fw-normal"><a href="areas.html?a=${this.mealArea}" class="text-decoration-none text-muted">${this.mealArea} Food</a></h6>
