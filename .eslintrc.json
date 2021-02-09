@@ -23,7 +23,10 @@
 			"double"
 		],
 		"import/extensions": ["error", "always"],
-		"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
-		"no-else-return":"off"
+		"no-mixed-spaces-and-tabs": ["off"],
+		"no-else-return":"off",
+		"indent": ["error", "tab"],
+		"no-return-assign": ["off"],
+		"eqeqeq": ["error", "smart"]
     }
 }

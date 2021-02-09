@@ -1,4 +1,4 @@
-function FiveMeals(meals) {
+function OtherMeals(meals) {
 	this.idMeal = meals.idMeal;
 	this.meal = meals.strMeal;
 	this.mealThumb = meals.strMealThumb;
@@ -27,4 +27,4 @@ function FiveMeals(meals) {
 	};
 }
 
-export default FiveMeals;
+export default OtherMeals;
