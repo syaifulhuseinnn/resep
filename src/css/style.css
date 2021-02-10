@@ -117,6 +117,11 @@ ul li::before {
   font-size: 1.2em;
 }
 
+.btn-love {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 #cover-meal {
   background-image: url("https://via.placeholder.com/300");
   background-position: center;
@@ -359,6 +364,9 @@ header .form-control-lg {
   }
   .meal-title {
     max-width: 310px;
+  }
+  #cover-meal {
+    height: 500px;
   }
 }
 /*# sourceMappingURL=style.css.map */

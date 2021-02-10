@@ -8,6 +8,7 @@ const main = () => {
 	const divPopuler = document.querySelector("#populer");
 	const divOtherCategories = document.querySelector("#others-categories");
 	const divOtherMeals = document.querySelector("#other-foods");
+	const arr = [];
 
 	function getNav() {
 	  const title = query.replace("?c=", "");
@@ -52,11 +53,11 @@ const main = () => {
 		const loveButton = document.querySelectorAll(".bx");
 		loveButton.forEach((love) => {
 			love.addEventListener("click", function () {
-				console.log(this.dataset.id);
-				this.classList.toggle("bxs-heart");
-				this.classList.toggle("text-success");
-				this.classList.toggle("bx-tada");
-
+				const { id } = this.dataset;
+				const { meal } = this.dataset;
+				const mealThumb = this.dataset.mealthumb;
+				loveToggle(this, "bxs-heart", "text-success", "bx-tada");
+				addFavoriteMeals(id, meal, mealThumb);
 				setTimeout(() => {
 					this.classList.remove("bx-tada");
 				}, 1500);
@@ -84,6 +85,35 @@ const main = () => {
 			classCategory[i].classList.remove("bg-success");
 			classCategory[i].style.backgroundColor = background[i];
 		}
+	}
+
+	function addFavoriteMeals(id, meal, mealThumb) {
+		const obj = {
+			id,
+			meal,
+			mealthumb: mealThumb,
+		};
+		if (arr.length === 0) {
+			arr.push(obj);
+		} else {
+			arr.forEach((a) => {
+				if (a.id === id) {
+					const fil = arr.filter((x) => x.id !== id);
+					console.log(fil);
+				} else {
+					arr.push(obj);
+				}
+			});
+		}
+		console.log("current Array: ", arr);
+	}
+
+	function loveToggle(element, ...cls) {
+		return cls.map((cl) => element.classList.toggle(cl));
+	}
+
+	function setLocalStorage(key, data) {
+		localStorage.setItem(key, data);
 	}
 
 	getNav();

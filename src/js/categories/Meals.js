@@ -19,7 +19,8 @@ function Meals(meals) {
 							</span>
 						</div>
 						<div class="align-self-end">
-							<span class="badge border border-light rounded-circle bg-light p-1 love"><i class='bx bx-heart text-center text-secondary fs-3'  data-id="${this.idMeal}"></i></span>
+							<span class="badge border border-light rounded-circle bg-light p-1 love"><i class='bx bx-heart text-center text-secondary fs-3' data-id="${this.idMeal}" data-meal="${this.meal}" data-mealThumb="${this.mealsThumb}"></i></span>
+							
 						</div>
 					</div>
 				</div>
